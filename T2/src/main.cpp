@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <cstdint>
+#include <cstdio>
 #include <cstring>
 #include <set>
 #include <iostream>
@@ -102,10 +103,7 @@ public:
 };
 
 int main(int argc, char **argv) {
-  if (argc != 2) {
-    exit(1);
-  }
-
-  Graph g(argv[1]);
+  char string[] = "1163751742\n1381373672\n2136511328\n3694931569\n7463417111\n1319128137\n1359912421\n3125421639\n1293138521\n2311944581";
+  Graph g(string);
   g.djikstras();
 }
